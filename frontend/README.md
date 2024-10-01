@@ -6,5 +6,6 @@ We want people visiting our website to understand what the club is about. This p
 
 - Typography: for displaying text
 - img: for displaying images
+- Box: extremely fundamental element, mostly useful for applying CS to
 - Stack: very helpful for managing layout, Grid is more complicated but more powerful
 
