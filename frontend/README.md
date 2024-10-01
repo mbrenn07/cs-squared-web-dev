@@ -1,6 +1,6 @@
 ## Officers Design
 
-We want people visiting our website to be able to see all of our officers, and for future developers to update them easily.
+We want people visiting our website to be able to see all of our officers, their headshots, and some information about them (use placeholders), and for future developers to update them easily.
 
 ## Suggestions
 
