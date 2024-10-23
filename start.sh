@@ -1,0 +1,1 @@
+(cd backend || exit; python -m flask --app server run) & (cd frontend || exit; npm start)
