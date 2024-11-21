@@ -1,3 +1,4 @@
+import json
 from flask import Flask
 from flask_cors import CORS
 import mailtrap as mt
@@ -18,11 +19,12 @@ def echo(message: str) -> None:
 
 @app.route("/submitContactForm/<formData>")
 def submitContactForm(formData: str) -> None:
+    name = json.loads(formData)
     mail = mt.Mail(
         sender=mt.Address(email=os.getenv('SENDER'), name="Mailtrap Test"),
         to=[mt.Address(email=os.getenv('RECIEVER'))],
-        subject="You are awesome!",
-        text="Congrats for sending test email with Mailtrap!",
+        subject="CSSquared Web Dev Project Interest!",
+        text=json.dumps(name),
         category="Integration Test",
     )
 
